@@ -6,37 +6,48 @@ whiplash = media.Movie(
     "A promising young drummer enrolls at a cut-throat music conservatory",
     "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
     "https://www.youtube.com/watch?v=7d_jQycdQGo",
-    "Independent drama",
-    "107 minutes")
+    "Drama, Music",
+    "107 minutes",
+    "R",
+    "2014",
+    "8.5")
 
-three_musketeers = media.Movie(
-    "D'Artagnan and Three Musketeers",
-    "Adventures of a young man named d'Artagnan after he leaves home to travel"
-    " to Paris, to join the Musketeers of the Guard",
-    "https://upload.wikimedia.org/wikipedia/en/c/cf/"
-    "D%27Artagnan_and_Three_Musketeers.jpg",
-    "https://www.youtube.com/watch?v=boMLziTt-Hk",
-    "Musical historic-drama",
-    "220 minutes")
-
+imitation_game = media.Movie(
+    "The Imitation Game",
+    "During World War II, mathematician Alan Turing tries to crack the enigma "
+    "code with help from fellow mathematicians",
+    "https://upload.wikimedia.org/wikipedia/en/5/5e/"
+    "The_Imitation_Game_poster.jpg",
+    "https://www.youtube.com/watch?v=S5CjKEFb-sM",
+    "Biography, Drama, Thriller",
+    "114 minutes",
+    "PG-13",
+    "2014",
+    "8.1")
 
 la_la_land = media.Movie(
     "La La Land",
     "A jazz pianist falls for an aspiring actress in Los Angeles",
     "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
     "https://www.youtube.com/watch?v=0pdqf4P9MB8",
-    "Romantic musical comedy-drama",
-    "128 minutes")
+    "Comedy, Drama, Musical",
+    "128 minutes",
+    "PG-13",
+    "2016",
+    "8.5")
 
 cabaret = media.Movie(
     "Cabaret",
-    "A female girlie club entertainer in Weimar Republic era Berlin romances"
+    "A female girlie club entertainer in Berlin romances"
     " two men while the Nazi Party rises to power around them",
     "https://upload.wikimedia.org/wikipedia/en/3/3e/"
     "Original_movie_poster_for_Cabaret.jpg",
     "https://www.youtube.com/watch?v=hYZ8cqMLuQg",
-    "Musical drama",
-    "124 minutes")
+    "Drama, Musical",
+    "124 minutes",
+    "PG",
+    "1972",
+    "7.9")
 
 definitely_maybe = media.Movie(
     "Definitely, Maybe",
@@ -45,8 +56,11 @@ definitely_maybe = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/a/a0/"
     "Definitely_Maybe_poster.jpg",
     "https://www.youtube.com/watch?v=NfUwvTvzrg8",
-    "Romantic comedy-drama",
-    "111 minutes")
+    "Comedy, Drama, Romance",
+    "111 minutes",
+    "PG-13",
+    "2008",
+    "7.2")
 
 vc_barcelona = media.Movie(
     "Vicky Cristina Barcelona",
@@ -54,8 +68,11 @@ vc_barcelona = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/2/28/"
     "Vicky_cristina_barcelona.jpg",
     "https://www.youtube.com/watch?v=B-RdUcXAKiw",
-    "Romantic comedy-drama",
-    "97 minutes")
+    "Drama, Romance",
+    "97 minutes",
+    "PG-13",
+    "2008",
+    "7.1")
 
 gilmore_girls = media.TV_Show(
     "Gilmore Girls",
@@ -96,7 +113,6 @@ peaky_blinders = media.TV_Show(
 
 
 movies = [cabaret, la_la_land,
-          whiplash, definitely_maybe, vc_barcelona, three_musketeers]
+          whiplash, definitely_maybe, vc_barcelona, imitation_game]
 tv_shows = [gilmore_girls, last_ship, peaky_blinders]
-# fresh_tomatoes.open_movies_page(movies)
-fresh_tomatoes.open_tv_show_page(tv_shows)
+fresh_tomatoes.open_movies_page(movies)
