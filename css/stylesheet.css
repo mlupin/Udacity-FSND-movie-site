@@ -24,10 +24,10 @@ body {
     margin-bottom: 10px;
     padding-top: 10px;
 }
-.movie-tile:hover {
+/*.movie-tile:hover {
     background-color: #EEE;
     cursor: pointer;
-}
+}*/
 .scale-media {
     padding-bottom: 56.25%;
     position: relative;
@@ -80,4 +80,10 @@ body {
 .close {
     background: #606061;
     color: #FFFFFF;
+}
+.stars {
+    position: inline;
+}
+.icon-stack {
+    position: relative;
 }

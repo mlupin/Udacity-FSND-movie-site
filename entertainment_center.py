@@ -9,6 +9,8 @@ whiplash = media.Movie(
     "Drama, Music",
     "R",
     "8.5",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2014")
 
 imitation_game = media.Movie(
@@ -21,6 +23,8 @@ imitation_game = media.Movie(
     "Biography, Drama, Thriller",
     "PG-13",
     "8.1",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2014")
 
 la_la_land = media.Movie(
@@ -31,6 +35,8 @@ la_la_land = media.Movie(
     "Comedy, Drama, Musical",
     "PG-13",
     "8.5",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2016")
 
 cabaret = media.Movie(
@@ -43,6 +49,8 @@ cabaret = media.Movie(
     "Drama, Musical",
     "PG",
     "7.9",
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
+    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "1972")
 
 definitely_maybe = media.Movie(
@@ -55,6 +63,8 @@ definitely_maybe = media.Movie(
     "Comedy, Drama, Romance",
     "PG-13",
     "7.2",
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
+    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "2008")
 
 vc_barcelona = media.Movie(
@@ -66,6 +76,8 @@ vc_barcelona = media.Movie(
     "Drama, Romance",
     "PG-13",
     "7.1",
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
+    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "2008")
 
 gilmore_girls = media.TvShow(
@@ -79,6 +91,8 @@ gilmore_girls = media.TvShow(
     "Comedy, Drama",
     "TV-PG",
     "8.1",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2000-2007")
 
 last_ship = media.TvShow(
@@ -93,19 +107,22 @@ last_ship = media.TvShow(
     "Action, Drama, Sci-Fi",
     "TV-14",
     "7.5",
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
+    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "2014-")
 
 peaky_blinders = media.TvShow(
     "Peaky Blinders",
     "A gangster family epic centered on a gang and their leader, "
     "Tommy Shelby, who means to move up in the world.",
-    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxODYzNTQzOV5BMl5B"
-    "anBnXkFtZTgwMTI2MDYwMDE@._V1_UY268_CR1,0,182,268_AL_.jpg"
-    "Peaky_Blinders_titlecard.jpg",
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxODYzNTQzOV5BM"
+    "l5BanBnXkFtZTgwMTI2MDYwMDE@._V1_UY268_CR1,0,182,268_AL_.jpg",
     "https://www.youtube.com/watch?v=JwXfVGjSz-4",
     "Crime, Drama",
     "TV-MA",
     "8.8",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2013-")
 
 

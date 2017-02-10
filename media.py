@@ -5,7 +5,7 @@ class Video():
     """class Video is the base 'parent' class of TvShow and Movie"""
 
     def __init__(self, title, story, poster, trailer,
-                 genre, rating, imdb_rating):
+                 genre, rating, imdb_rating, stars):
         self.title = title
         self.story = story
         self.poster = poster
@@ -13,6 +13,7 @@ class Video():
         self.genre = genre
         self.rating = rating
         self.imdb_rating = imdb_rating
+        self.stars = stars
 
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
@@ -22,9 +23,9 @@ class Movie(Video):
     """This class provides a way to store movie related information"""
 
     def __init__(self, title, story, poster, trailer,
-                 genre, rating, imdb_rating, release_year):
+                 genre, rating, imdb_rating, stars, release_year):
         Video.__init__(self, title, story, poster, trailer,
-                       genre, rating, imdb_rating)
+                       genre, rating, imdb_rating, stars)
         self.years = release_year
 
     def show_trailer(self):
@@ -35,9 +36,9 @@ class TvShow(Video):
     """This class provides a way to store tv show related information"""
 
     def __init__(self, title, story, poster, trailer,
-                 genre, rating, imdb_rating, years_on_air):
+                 genre, rating, imdb_rating, stars, years_on_air):
         Video.__init__(self, title, story, poster, trailer,
-                       genre, rating, imdb_rating)
+                       genre, rating, imdb_rating, stars)
         self.years = years_on_air
 
     def show_trailer(self):

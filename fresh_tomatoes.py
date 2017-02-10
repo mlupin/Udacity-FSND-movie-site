@@ -14,7 +14,7 @@ main_page_head = '''
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     
@@ -85,11 +85,14 @@ main_page_content = '''
 
 # A single movie entry html template
 tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster}" width="220" height="342">
-    <h3 class="title">{title} | {years}</h3>
-    <h4>{rating} | {genre} | {imdb_rating}/10</h4>
+<div class="col-md-6 col-lg-4 movie-tile text-center">
+    <img src="{poster}" alt="{title} poster" width="220" height="342" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <h4 class="title">{title} ({years})</h4>
+    <h5>{rating} | {genre}</h5>
+    <img class="image-responsive" src="{stars}" alt="{imdb_rating}/10 star rating" width="70%">
     <p>{story}</p>
+
+    
 
     <!-- <a href="#openModal">Open Modal</a>
 
@@ -116,7 +119,7 @@ def create_video_tiles_content(videos):
             r'(?<=be/)[^&#]+', video.trailer_youtube_url)
         trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match
                               else None)
-
+        
         # Append the tile for the video with its content filled in
         content += tile_content.format(
             title=video.title,
@@ -126,8 +129,11 @@ def create_video_tiles_content(videos):
             genre=video.genre,
             rating=video.rating,
             imdb_rating=video.imdb_rating,
+            stars=video.stars,
             years=video.years
         )
+
+
     return content
 
 
