@@ -79,31 +79,26 @@ main_page_content = '''
         {video_tiles}
     </div>
   </body>
+  <footer>
+      <p>Contact Me | GitHub</p>
+  </footer>
 </html>
 '''
 
 
 # A single movie entry html template
 tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center">
-    <img src="{poster}" alt="{title} poster" width="220" height="342" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+    data-trailer-youtube-id="{trailer_youtube_id}"
+    data-toggle="modal" data-target="#trailer">
+    <div class="wrapper">
+        <img src="{poster}" alt="{title} poster" width="220" height="342">
+    </div>
     <h4 class="title">{title} ({years})</h4>
     <h5>{rating} | {genre}</h5>
-    <img class="image-responsive" src="{stars}" alt="{imdb_rating}/10 star rating" width="70%">
+    <img class="image-responsive" src="{stars}" alt="{imdb_rating}/10 rating"
+        width="70%">
     <p>{story}</p>
-
-    
-
-    <!-- <a href="#openModal">Open Modal</a>
-
-    <div id="openModal" class="modalDialog">
-        <div>   
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>{title}</h2>
-            <h3>{rating} | {genre} | {imdb_rating}/10</h3>
-            <p>{story}</p>
-        </div>
-    </div> -->
 </div>
 '''
 
@@ -119,21 +114,19 @@ def create_video_tiles_content(videos):
             r'(?<=be/)[^&#]+', video.trailer_youtube_url)
         trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match
                               else None)
-        
+
         # Append the tile for the video with its content filled in
         content += tile_content.format(
             title=video.title,
             poster=video.poster,
             trailer_youtube_id=trailer_youtube_id,
             story=video.story,
-            genre=video.genre,
+            genre=', '.join(str(x) for x in video.genre),
             rating=video.rating,
             imdb_rating=video.imdb_rating,
             stars=video.stars,
             years=video.years
         )
-
-
     return content
 
 

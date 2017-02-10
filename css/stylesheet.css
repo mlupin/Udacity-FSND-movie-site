@@ -1,6 +1,7 @@
 body {
     padding-top: 80px;
 }
+
 .title {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -24,10 +25,11 @@ body {
     margin-bottom: 10px;
     padding-top: 10px;
 }
-/*.movie-tile:hover {
-    background-color: #EEE;
+
+.wrapper :hover {
+    opacity: 0.2;
     cursor: pointer;
-}*/
+}
 .scale-media {
     padding-bottom: 56.25%;
     position: relative;
@@ -81,9 +83,4 @@ body {
     background: #606061;
     color: #FFFFFF;
 }
-.stars {
-    position: inline;
-}
-.icon-stack {
-    position: relative;
-}
+

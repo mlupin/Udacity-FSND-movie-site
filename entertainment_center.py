@@ -6,7 +6,7 @@ whiplash = media.Movie(
     "A promising young drummer enrolls at a cut-throat music conservatory",
     "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
     "https://www.youtube.com/watch?v=7d_jQycdQGo",
-    "Drama, Music",
+    ["Drama", "Music"],
     "R",
     "8.5",
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
@@ -20,7 +20,7 @@ imitation_game = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/5/5e/"
     "The_Imitation_Game_poster.jpg",
     "https://www.youtube.com/watch?v=S5CjKEFb-sM",
-    "Biography, Drama, Thriller",
+    ["Biography", "Drama", "Thriller"],
     "PG-13",
     "8.1",
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
@@ -32,7 +32,7 @@ la_la_land = media.Movie(
     "A jazz pianist falls for an aspiring actress in Los Angeles",
     "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
     "https://www.youtube.com/watch?v=0pdqf4P9MB8",
-    "Comedy, Drama, Musical",
+    ["Comedy", "Drama", "Musical"],
     "PG-13",
     "8.5",
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
@@ -46,7 +46,7 @@ cabaret = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/3/3e/"
     "Original_movie_poster_for_Cabaret.jpg",
     "https://www.youtube.com/watch?v=hYZ8cqMLuQg",
-    "Drama, Musical",
+    ["Drama", "Musical"],
     "PG",
     "7.9",
     "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
@@ -60,7 +60,7 @@ definitely_maybe = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/a/a0/"
     "Definitely_Maybe_poster.jpg",
     "https://www.youtube.com/watch?v=NfUwvTvzrg8",
-    "Comedy, Drama, Romance",
+    ["Comedy", "Drama", "Romance"],
     "PG-13",
     "7.2",
     "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
@@ -73,7 +73,7 @@ vc_barcelona = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/2/28/"
     "Vicky_cristina_barcelona.jpg",
     "https://www.youtube.com/watch?v=B-RdUcXAKiw",
-    "Drama, Romance",
+    ["Drama", "Romance"],
     "PG-13",
     "7.1",
     "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
@@ -88,7 +88,7 @@ gilmore_girls = media.TvShow(
     "BanBnXkFtZTcwMTg1OTAzMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
     "Gilmore_girls_title_screen.jpg",
     "https://www.youtube.com/watch?v=YYHpsJi--uQ",
-    "Comedy, Drama",
+    ["Comedy", "Drama"],
     "TV-PG",
     "8.1",
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
@@ -104,11 +104,11 @@ last_ship = media.TvShow(
     "BanBnXkFtZTgwMTk2MzExOTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
     "LastShipSeriesIntertitle.jpg",
     "https://www.youtube.com/watch?v=2Vng00SYRL0",
-    "Action, Drama, Sci-Fi",
+    ["Action", "Drama", "Sci-Fi"],
     "TV-14",
     "7.5",
-    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
-    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav"
+    "57uI6FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "2014-")
 
 peaky_blinders = media.TvShow(
@@ -118,7 +118,7 @@ peaky_blinders = media.TvShow(
     "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxODYzNTQzOV5BM"
     "l5BanBnXkFtZTgwMTI2MDYwMDE@._V1_UY268_CR1,0,182,268_AL_.jpg",
     "https://www.youtube.com/watch?v=JwXfVGjSz-4",
-    "Crime, Drama",
+    ["Crime", "Drama"],
     "TV-MA",
     "8.8",
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
@@ -129,4 +129,4 @@ peaky_blinders = media.TvShow(
 movies = [cabaret, la_la_land,
           whiplash, definitely_maybe, vc_barcelona, imitation_game]
 tvshows = [gilmore_girls, last_ship, peaky_blinders]
-fresh_tomatoes.open_videos_page(movies)
+fresh_tomatoes.open_videos_page(tvshows)
