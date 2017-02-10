@@ -7,10 +7,9 @@ whiplash = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
     "https://www.youtube.com/watch?v=7d_jQycdQGo",
     "Drama, Music",
-    "107 minutes",
     "R",
-    "2014",
-    "8.5")
+    "8.5",
+    "2014")
 
 imitation_game = media.Movie(
     "The Imitation Game",
@@ -20,10 +19,9 @@ imitation_game = media.Movie(
     "The_Imitation_Game_poster.jpg",
     "https://www.youtube.com/watch?v=S5CjKEFb-sM",
     "Biography, Drama, Thriller",
-    "114 minutes",
     "PG-13",
-    "2014",
-    "8.1")
+    "8.1",
+    "2014")
 
 la_la_land = media.Movie(
     "La La Land",
@@ -31,10 +29,9 @@ la_la_land = media.Movie(
     "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
     "https://www.youtube.com/watch?v=0pdqf4P9MB8",
     "Comedy, Drama, Musical",
-    "128 minutes",
     "PG-13",
-    "2016",
-    "8.5")
+    "8.5",
+    "2016")
 
 cabaret = media.Movie(
     "Cabaret",
@@ -44,10 +41,9 @@ cabaret = media.Movie(
     "Original_movie_poster_for_Cabaret.jpg",
     "https://www.youtube.com/watch?v=hYZ8cqMLuQg",
     "Drama, Musical",
-    "124 minutes",
     "PG",
-    "1972",
-    "7.9")
+    "7.9",
+    "1972")
 
 definitely_maybe = media.Movie(
     "Definitely, Maybe",
@@ -57,10 +53,9 @@ definitely_maybe = media.Movie(
     "Definitely_Maybe_poster.jpg",
     "https://www.youtube.com/watch?v=NfUwvTvzrg8",
     "Comedy, Drama, Romance",
-    "111 minutes",
     "PG-13",
-    "2008",
-    "7.2")
+    "7.2",
+    "2008")
 
 vc_barcelona = media.Movie(
     "Vicky Cristina Barcelona",
@@ -69,50 +64,52 @@ vc_barcelona = media.Movie(
     "Vicky_cristina_barcelona.jpg",
     "https://www.youtube.com/watch?v=B-RdUcXAKiw",
     "Drama, Romance",
-    "97 minutes",
     "PG-13",
-    "2008",
-    "7.1")
+    "7.1",
+    "2008")
 
-gilmore_girls = media.TV_Show(
+gilmore_girls = media.TvShow(
     "Gilmore Girls",
     "A drama centering around the relationship between a thirtysomething"
     " single mother and her teen daughter living in Stars Hollow, Connecticut",
-    "https://upload.wikimedia.org/wikipedia/en/5/55/"
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyMjM4Mjc5MF5BMl5"
+    "BanBnXkFtZTcwMTg1OTAzMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
     "Gilmore_girls_title_screen.jpg",
     "https://www.youtube.com/watch?v=YYHpsJi--uQ",
-    "'Where you Lead' by Toni Stern",
-    "7",
-    "Comedy-drama",
-    "40 minutes")
+    "Comedy, Drama",
+    "TV-PG",
+    "8.1",
+    "2000-2007")
 
-last_ship = media.TV_Show(
+last_ship = media.TvShow(
     "Last Ship",
     "After global viral pandemic wipes out over 80% of the world's "
     "population, the crew of a U.S. Navy destroyer must try to find a cure, "
     "stop the virus, and save humanity",
-    "https://upload.wikimedia.org/wikipedia/en/e/ec/"
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5MTM5Mjc5NV5BMl5"
+    "BanBnXkFtZTgwMTk2MzExOTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
     "LastShipSeriesIntertitle.jpg",
     "https://www.youtube.com/watch?v=2Vng00SYRL0",
-    "Theme song by Steve Jablonsky",
-    "3",
-    "Post-apocalyptic action drama",
-    "45 minutes")
+    "Action, Drama, Sci-Fi",
+    "TV-14",
+    "7.5",
+    "2014-")
 
-peaky_blinders = media.TV_Show(
+peaky_blinders = media.TvShow(
     "Peaky Blinders",
     "A gangster family epic centered on a gang and their leader, "
     "Tommy Shelby, who means to move up in the world.",
-    "https://upload.wikimedia.org/wikipedia/en/e/e8/"
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxODYzNTQzOV5BMl5B"
+    "anBnXkFtZTgwMTI2MDYwMDE@._V1_UY268_CR1,0,182,268_AL_.jpg"
     "Peaky_Blinders_titlecard.jpg",
     "https://www.youtube.com/watch?v=JwXfVGjSz-4",
-    "'Red Right Hand' by Nick Cave and the Bad Seeds",
-    "3",
-    "Historical fiction",
-    "55 minutes")
+    "Crime, Drama",
+    "TV-MA",
+    "8.8",
+    "2013-")
 
 
 movies = [cabaret, la_la_land,
           whiplash, definitely_maybe, vc_barcelona, imitation_game]
-tv_shows = [gilmore_girls, last_ship, peaky_blinders]
-fresh_tomatoes.open_movies_page(movies)
+tvshows = [gilmore_girls, last_ship, peaky_blinders]
+fresh_tomatoes.open_videos_page(movies)

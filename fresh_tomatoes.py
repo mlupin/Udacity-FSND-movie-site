@@ -76,7 +76,7 @@ main_page_content = '''
       </div>
     </div>
     <div class="container">
-        {movie_tiles}
+        {video_tiles}
     </div>
   </body>
 </html>
@@ -84,61 +84,60 @@ main_page_content = '''
 
 
 # A single movie entry html template
-movie_tile_content = '''
+tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h3 class="title">{movie_title} ({release_year})</h3>
-    <h4>{rating} | {movie_genre} | {imbd_rating}/10</h4>
-    <p>{movie_storyline}</p>
+    <img src="{poster}" width="220" height="342">
+    <h3 class="title">{title} | {years}</h3>
+    <h4>{rating} | {genre} | {imdb_rating}/10</h4>
+    <p>{story}</p>
 
     <!-- <a href="#openModal">Open Modal</a>
 
     <div id="openModal" class="modalDialog">
         <div>   
             <a href="#close" title="Close" class="close">X</a>
-            <h2>{movie_title}</h2>
-            <h3>{rating} | {duration} | {movie_genre} | {imbd_rating}/10</h3>
-            <p>{movie_storyline}</p>
+            <h2>{title}</h2>
+            <h3>{rating} | {genre} | {imdb_rating}/10</h3>
+            <p>{story}</p>
         </div>
     </div> -->
 </div>
 '''
 
 
-def create_movie_tiles_content(movies):
+def create_video_tiles_content(videos):
     # The HTML content for this section of the page
     content = ''
-    for movie in movies:
+    for video in videos:
         # Extract the youtube ID from the url
         youtube_id_match = re.search(
-            r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
+            r'(?<=v=)[^&#]+', video.trailer_youtube_url)
         youtube_id_match = youtube_id_match or re.search(
-            r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
+            r'(?<=be/)[^&#]+', video.trailer_youtube_url)
         trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match
                               else None)
 
-        # Append the tile for the movie with its content filled in
-        content += movie_tile_content.format(
-            movie_title=movie.title,
-            poster_image_url=movie.poster_image_url,
+        # Append the tile for the video with its content filled in
+        content += tile_content.format(
+            title=video.title,
+            poster=video.poster,
             trailer_youtube_id=trailer_youtube_id,
-            movie_storyline=movie.storyline,
-            movie_genre=movie.movie_genre,
-            duration=movie.duration,
-            rating=movie.rating,
-            release_year=movie.release_year,
-            imbd_rating=movie.imbd_rating
+            story=video.story,
+            genre=video.genre,
+            rating=video.rating,
+            imdb_rating=video.imdb_rating,
+            years=video.years
         )
     return content
 
 
-def open_movies_page(movies):
+def open_videos_page(videos):
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
-        movie_tiles=create_movie_tiles_content(movies))
+        video_tiles=create_video_tiles_content(videos))
 
     # Output the file
     output_file.write(main_page_head + rendered_content)

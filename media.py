@@ -1,40 +1,44 @@
 import webbrowser
 
 
-class Movie():
-    """This class provides a way to store movie related information"""
+class Video():
+    """class Video is the base 'parent' class of TvShow and Movie"""
 
-    def __init__(self, movie_title, movie_storyline,
-                 poster_image, trailer_youtube, movie_genre,
-                 duration, rating, release_year, imbd_rating):
-        self.title = movie_title
-        self.storyline = movie_storyline
-        self.poster_image_url = poster_image
-        self.trailer_youtube_url = trailer_youtube
-        self.movie_genre = movie_genre
-        self.duration = duration
+    def __init__(self, title, story, poster, trailer,
+                 genre, rating, imdb_rating):
+        self.title = title
+        self.story = story
+        self.poster = poster
+        self.trailer_youtube_url = trailer
+        self.genre = genre
         self.rating = rating
-        self.release_year = release_year
-        self.imbd_rating = imbd_rating
+        self.imdb_rating = imdb_rating
 
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
 
 
-class TV_Show():
+class Movie(Video):
+    """This class provides a way to store movie related information"""
+
+    def __init__(self, title, story, poster, trailer,
+                 genre, rating, imdb_rating, release_year):
+        Video.__init__(self, title, story, poster, trailer,
+                       genre, rating, imdb_rating)
+        self.years = release_year
+
+    def show_trailer(self):
+        webbrowser.open(self.trailer_youtube_url)
+
+
+class TvShow(Video):
     """This class provides a way to store tv show related information"""
 
-    def __init__(self, show_title, show_storyline,
-                 poster_image, trailer_youtube, theme_song,
-                 num_seasons, show_genre, running_time):
-        self.title = show_title
-        self.storyline = show_storyline
-        self.poster_image_url = poster_image
-        self.trailer_youtube_url = trailer_youtube
-        self.theme_song = theme_song
-        self.num_seasons = num_seasons
-        self.show_genre = show_genre
-        self.running_time = running_time
+    def __init__(self, title, story, poster, trailer,
+                 genre, rating, imdb_rating, years_on_air):
+        Video.__init__(self, title, story, poster, trailer,
+                       genre, rating, imdb_rating)
+        self.years = years_on_air
 
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
