@@ -1,6 +1,25 @@
 import fresh_tomatoes
 import media
 
+# Movies #
+# title = media.Movie(title, story, poster, trailer,
+#                     genre, rating, imdb_rating, stars, year): #
+
+casablanca = media.Movie(
+    "Casablanca",
+    "In Casablanca, Morocco in December 1941, a cynical American expatriate "
+    "meets a former lover, with unforeseen complications",
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS0"
+    "0NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX182_CR0,"
+    "0,182,268_AL_.jpg",
+    "https://www.youtube.com/watch?v=BkL9l7qovsE",
+    ["Drama", "Romance", "War"],
+    "PG",
+    "8.6",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
+    "1942")
+
 whiplash = media.Movie(
     "Whiplash",
     "A promising young drummer enrolls at a cut-throat music conservatory",
@@ -80,6 +99,7 @@ vc_barcelona = media.Movie(
     "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "2008")
 
+# Tv Shows #
 gilmore_girls = media.TvShow(
     "Gilmore Girls",
     "A drama centering around the relationship between a thirtysomething"
@@ -125,8 +145,36 @@ peaky_blinders = media.TvShow(
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2013-")
 
+game_of_thrones = media.TvShow(
+    "Game of Thrones",
+    "Nine noble families fight for control over the mythical lands of "
+    "Westeros. Meanwhile, a forgotten race hell-bent on destruction returns "
+    "after being dormant for thousands of years",
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5OTQ1MTY5Nl5BMl5"
+    "BanBnXkFtZTgwMjM3NzMxODE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://www.youtube.com/watch?v=iGp_N3Ir7Do",
+    ["Adventure", "Drama", "Fantasy"],
+    "TV-MA",
+    "9.5",
+    "https://4.bp.blogspot.com/-CodU42tFglM/TuU1jT3hzCI/AAAAAAAAAK4/gYJldIQay"
+    "m4julGNknJ-iWJhbOvexGcvQCPcB/s320/09%2Bout%2Bof%2B10.jpg",
+    "2011-")
+
+peep_show = media.TvShow(
+    "Peep Show",
+    "Mark and Jez are a couple of twenty-something roommates who have nothing "
+    "in common - except for the fact that their lives are anything but normal",
+    "http://www.imdb.com/title/tt0387764/mediaviewer/rm1972215040?ref_=tt_ov_i",
+    "https://www.youtube.com/watch?v=xzsy-haNy1E",
+    ["Comedy"],
+    "TV-MA",
+    "8.6",
+    "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
+    "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
+    "2003-2015")
+
 
 movies = [cabaret, la_la_land,
-          whiplash, definitely_maybe, vc_barcelona, imitation_game]
-tvshows = [gilmore_girls, last_ship, peaky_blinders]
-fresh_tomatoes.open_videos_page(tvshows)
+          whiplash, definitely_maybe, vc_barcelona, imitation_game, casablanca]
+tvshows = [gilmore_girls, last_ship, peaky_blinders, game_of_thrones, peep_show]
+fresh_tomatoes.open_videos_page(movies)

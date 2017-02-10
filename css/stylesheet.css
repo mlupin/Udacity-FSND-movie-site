@@ -1,5 +1,6 @@
 body {
     padding-top: 80px;
+    background-color: #eee;
 }
 
 .title {
@@ -26,10 +27,6 @@ body {
     padding-top: 10px;
 }
 
-.wrapper :hover {
-    opacity: 0.2;
-    cursor: pointer;
-}
 .scale-media {
     padding-bottom: 56.25%;
     position: relative;
@@ -84,3 +81,31 @@ body {
     color: #FFFFFF;
 }
 
+/* Pinterest Like Grid */
+/* http://bootsnipp.com/snippets/featured/pinterest-like-responsive-grid */
+#pinBGrid {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+}
+.white-panel {
+  position: relative;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.white-panel h1 {
+  font-size: 1em;
+}
+.white-panel h1 a {
+  color: #A92733;
+}
+.white-panel:hover {
+  opacity: 0.2;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}

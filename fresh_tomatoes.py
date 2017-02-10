@@ -69,14 +69,26 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Movies</a>
-            <a class="navbar-brand" href="#">TV Shows</a>
+            <a class="navbar-brand" href="#">Fresh Tomatoes</a>
+            <a href="/my-link/">Click me</a>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Browse
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" style="transition-duration: 150ms;">
+                  <li><a href="#">Movies & TV Shows</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">TV Shows</a></li>
+                </ul>
+              </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-        {video_tiles}
+        <div id="pinGrid">
+            {video_tiles}
+        </div>
     </div>
   </body>
   <footer>
@@ -91,14 +103,14 @@ tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center"
     data-trailer-youtube-id="{trailer_youtube_id}"
     data-toggle="modal" data-target="#trailer">
-    <div class="wrapper">
-        <img src="{poster}" alt="{title} poster" width="220" height="342">
+    <div class="white-panel">
+        <img class="wrapper" src="{poster}" alt="{title} poster" width="220" height="342">
+        <h4 class="title">{title} ({years})</h4>
+        <h5>{rating} | {genre}</h5>
+        <p>{story}</p>
+        <img class="image-responsive" src="{stars}" alt="{imdb_rating}/10 rating"
+            width="50%"><p>{imdb_rating}</p>
     </div>
-    <h4 class="title">{title} ({years})</h4>
-    <h5>{rating} | {genre}</h5>
-    <img class="image-responsive" src="{stars}" alt="{imdb_rating}/10 rating"
-        width="70%">
-    <p>{story}</p>
 </div>
 '''
 
