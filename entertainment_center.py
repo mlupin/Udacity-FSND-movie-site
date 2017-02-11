@@ -15,10 +15,10 @@ casablanca = media.Movie(
     "https://www.youtube.com/watch?v=BkL9l7qovsE",
     ["Drama", "Romance", "War"],
     "PG",
-    "8.6",
+    8.6,
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
-    "1942")
+    1942)
 
 whiplash = media.Movie(
     "Whiplash",
@@ -27,10 +27,10 @@ whiplash = media.Movie(
     "https://www.youtube.com/watch?v=7d_jQycdQGo",
     ["Drama", "Music"],
     "R",
-    "8.5",
+    8.5,
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
-    "2014")
+    2014)
 
 imitation_game = media.Movie(
     "The Imitation Game",
@@ -41,10 +41,10 @@ imitation_game = media.Movie(
     "https://www.youtube.com/watch?v=S5CjKEFb-sM",
     ["Biography", "Drama", "Thriller"],
     "PG-13",
-    "8.1",
+    8.1,
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
-    "2014")
+    2014)
 
 la_la_land = media.Movie(
     "La La Land",
@@ -53,10 +53,10 @@ la_la_land = media.Movie(
     "https://www.youtube.com/watch?v=0pdqf4P9MB8",
     ["Comedy", "Drama", "Musical"],
     "PG-13",
-    "8.5",
+    8.5,
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
-    "2016")
+    2016)
 
 cabaret = media.Movie(
     "Cabaret",
@@ -67,10 +67,10 @@ cabaret = media.Movie(
     "https://www.youtube.com/watch?v=hYZ8cqMLuQg",
     ["Drama", "Musical"],
     "PG",
-    "7.9",
-    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
-    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
-    "1972")
+    7.9,
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav"
+    "57uI6FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
+    1972)
 
 definitely_maybe = media.Movie(
     "Definitely, Maybe",
@@ -81,10 +81,10 @@ definitely_maybe = media.Movie(
     "https://www.youtube.com/watch?v=NfUwvTvzrg8",
     ["Comedy", "Drama", "Romance"],
     "PG-13",
-    "7.2",
-    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
-    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
-    "2008")
+    7.2,
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav5"
+    "7uI6FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
+    2008)
 
 vc_barcelona = media.Movie(
     "Vicky Cristina Barcelona",
@@ -95,10 +95,10 @@ vc_barcelona = media.Movie(
     "https://www.youtube.com/watch?v=B-RdUcXAKiw",
     ["Drama", "Romance"],
     "PG-13",
-    "7.1",
-    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav57uI6"
-    "FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
-    "2008")
+    7.1,
+    "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav"
+    "57uI6FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
+    2008)
 
 # Tv Shows #
 gilmore_girls = media.TvShow(
@@ -126,7 +126,7 @@ last_ship = media.TvShow(
     "https://www.youtube.com/watch?v=2Vng00SYRL0",
     ["Action", "Drama", "Sci-Fi"],
     "TV-14",
-    "7.5",
+    7.5,
     "https://2.bp.blogspot.com/-__0LvdlU5y0/TsubB8PsbKI/AAAAAAAAAG4/qWG1Yav"
     "57uI6FcWvaw4AotvcwPgiTz9ugCPcB/s320/07%2Bout%2Bof%2B10.jpg",
     "2014-")
@@ -140,7 +140,7 @@ peaky_blinders = media.TvShow(
     "https://www.youtube.com/watch?v=JwXfVGjSz-4",
     ["Crime", "Drama"],
     "TV-MA",
-    "8.8",
+    8.8,
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2013-")
@@ -154,7 +154,7 @@ game_of_thrones = media.TvShow(
     "https://www.youtube.com/watch?v=iGp_N3Ir7Do",
     ["Adventure", "Drama", "Fantasy"],
     "TV-MA",
-    "9.5",
+    9.5,
     "https://4.bp.blogspot.com/-CodU42tFglM/TuU1jT3hzCI/AAAAAAAAAK4/gYJldIQay"
     "m4julGNknJ-iWJhbOvexGcvQCPcB/s320/09%2Bout%2Bof%2B10.jpg",
     "2011-")
@@ -168,21 +168,21 @@ peep_show = media.TvShow(
     "https://www.youtube.com/watch?v=xzsy-haNy1E",
     ["Comedy"],
     "TV-MA",
-    "8.6",
+    8.6,
     "https://4.bp.blogspot.com/-RrPAor5sWEQ/TsuTaCKhU1I/AAAAAAAAAGQ/my0ejCQ0a"
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2003-2015")
 
 rick_and_morty = media.TvShow(
     "Rick and Morty",
-    "series follows the misadventures of Rick, a cynical mad scientist, and his"
-    " fretful, easily influenced grandson Morty",
+    "series follows the misadventures of Rick, a cynical mad scientist,"
+    "and his fretful, easily influenced grandson Morty",
     "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNDEwNTE0Nl5BMl"
     "5BanBnXkFtZTgwMzQ1MTg3MDE@._V1_UY268_CR2,0,182,268_AL_.jpg",
     "https://www.youtube.com/watch?v=WNhH00OIPP0",
     ["Animation", "Adventure", "Comedy"],
     "TV-14",
-    "9.3",
+    9.3,
     "https://4.bp.blogspot.com/-CodU42tFglM/TuU1jT3hzCI/AAAAAAAAAK4/gYJldIQay"
     "m4julGNknJ-iWJhbOvexGcvQCPcB/s320/09%2Bout%2Bof%2B10.jpg",
     "2013-")
@@ -190,9 +190,9 @@ rick_and_morty = media.TvShow(
 
 movies = [cabaret, la_la_land,
           whiplash, definitely_maybe, vc_barcelona, imitation_game, casablanca]
-tvshows = [gilmore_girls, last_ship, peaky_blinders, game_of_thrones, peep_show, rick_and_morty]
+tvshows = [gilmore_girls, last_ship, peaky_blinders,
+           game_of_thrones, peep_show, rick_and_morty]
 videos = [cabaret, la_la_land, whiplash, definitely_maybe, vc_barcelona,
           imitation_game, casablanca, gilmore_girls, last_ship, peaky_blinders,
           game_of_thrones, peep_show, rick_and_morty]
-          
 fresh_tomatoes.open_videos_page(videos)
