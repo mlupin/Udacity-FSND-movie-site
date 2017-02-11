@@ -61,7 +61,7 @@ la_la_land = media.Movie(
 cabaret = media.Movie(
     "Cabaret",
     "A female girlie club entertainer in Berlin romances"
-    " two men while the Nazi Party rises to power around them",
+    " two men while the Nazi Party rises to power",
     "https://upload.wikimedia.org/wikipedia/en/3/3e/"
     "Original_movie_poster_for_Cabaret.jpg",
     "https://www.youtube.com/watch?v=hYZ8cqMLuQg",
@@ -88,7 +88,8 @@ definitely_maybe = media.Movie(
 
 vc_barcelona = media.Movie(
     "Vicky Cristina Barcelona",
-    "Two girlfriends on a summer holiday in Spain",
+    "Two girlfriends on a summer holiday in Spain become enamored with the "
+    "same painter, unaware that his ex-wife is about to re-enter the picture",
     "https://upload.wikimedia.org/wikipedia/en/2/28/"
     "Vicky_cristina_barcelona.jpg",
     "https://www.youtube.com/watch?v=B-RdUcXAKiw",
@@ -118,8 +119,7 @@ gilmore_girls = media.TvShow(
 last_ship = media.TvShow(
     "Last Ship",
     "After global viral pandemic wipes out over 80% of the world's "
-    "population, the crew of a U.S. Navy destroyer must try to find a cure, "
-    "stop the virus, and save humanity",
+    "population, the crew of a U.S. Navy destroyer must try to find a cure",
     "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5MTM5Mjc5NV5BMl5"
     "BanBnXkFtZTgwMTk2MzExOTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
     "LastShipSeriesIntertitle.jpg",
@@ -134,7 +134,7 @@ last_ship = media.TvShow(
 peaky_blinders = media.TvShow(
     "Peaky Blinders",
     "A gangster family epic centered on a gang and their leader, "
-    "Tommy Shelby, who means to move up in the world.",
+    "Tommy Shelby, who means to move up in the world",
     "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxODYzNTQzOV5BM"
     "l5BanBnXkFtZTgwMTI2MDYwMDE@._V1_UY268_CR1,0,182,268_AL_.jpg",
     "https://www.youtube.com/watch?v=JwXfVGjSz-4",
@@ -148,8 +148,7 @@ peaky_blinders = media.TvShow(
 game_of_thrones = media.TvShow(
     "Game of Thrones",
     "Nine noble families fight for control over the mythical lands of "
-    "Westeros. Meanwhile, a forgotten race hell-bent on destruction returns "
-    "after being dormant for thousands of years",
+    "Westeros. Meanwhile, a forgotten race hell-bent on destruction returns",
     "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5OTQ1MTY5Nl5BMl5"
     "BanBnXkFtZTgwMjM3NzMxODE@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "https://www.youtube.com/watch?v=iGp_N3Ir7Do",
@@ -164,7 +163,8 @@ peep_show = media.TvShow(
     "Peep Show",
     "Mark and Jez are a couple of twenty-something roommates who have nothing "
     "in common - except for the fact that their lives are anything but normal",
-    "http://www.imdb.com/title/tt0387764/mediaviewer/rm1972215040?ref_=tt_ov_i",
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0ODMzNTI0MV5BMl5B"
+    "anBnXkFtZTcwMjEyMDcyMQ@@._V1._CR49,2,285,450_UX182_CR0,0,182,268_AL_.jpg",
     "https://www.youtube.com/watch?v=xzsy-haNy1E",
     ["Comedy"],
     "TV-MA",
@@ -173,8 +173,26 @@ peep_show = media.TvShow(
     "Q87Pu3zco6KHuQZaioqc0oBACPcB/s320/08%2Bout%2Bof%2B10.jpg",
     "2003-2015")
 
+rick_and_morty = media.TvShow(
+    "Rick and Morty",
+    "series follows the misadventures of Rick, a cynical mad scientist, and his"
+    " fretful, easily influenced grandson Morty",
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNDEwNTE0Nl5BMl"
+    "5BanBnXkFtZTgwMzQ1MTg3MDE@._V1_UY268_CR2,0,182,268_AL_.jpg",
+    "https://www.youtube.com/watch?v=WNhH00OIPP0",
+    ["Animation", "Adventure", "Comedy"],
+    "TV-14",
+    "9.3",
+    "https://4.bp.blogspot.com/-CodU42tFglM/TuU1jT3hzCI/AAAAAAAAAK4/gYJldIQay"
+    "m4julGNknJ-iWJhbOvexGcvQCPcB/s320/09%2Bout%2Bof%2B10.jpg",
+    "2013-")
+
 
 movies = [cabaret, la_la_land,
           whiplash, definitely_maybe, vc_barcelona, imitation_game, casablanca]
-tvshows = [gilmore_girls, last_ship, peaky_blinders, game_of_thrones, peep_show]
-fresh_tomatoes.open_videos_page(movies)
+tvshows = [gilmore_girls, last_ship, peaky_blinders, game_of_thrones, peep_show, rick_and_morty]
+videos = [cabaret, la_la_land, whiplash, definitely_maybe, vc_barcelona,
+          imitation_game, casablanca, gilmore_girls, last_ship, peaky_blinders,
+          game_of_thrones, peep_show, rick_and_morty]
+          
+fresh_tomatoes.open_videos_page(videos)

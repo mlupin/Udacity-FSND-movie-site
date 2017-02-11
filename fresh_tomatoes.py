@@ -17,8 +17,8 @@ main_page_head = '''
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" >
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
             // Remove the src so the player itself gets removed, as this is the only
@@ -42,6 +42,7 @@ main_page_head = '''
             $(this).next("div").show("fast", showNext);
           });
         });
+
     </script>
 </head>
 '''
@@ -69,31 +70,29 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes</a>
-            <a href="/my-link/">Click me</a>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Browse
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu" style="transition-duration: 150ms;">
-                  <li><a href="#">Movies & TV Shows</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Movies</a></li>
-                  <li><a href="#">TV Shows</a></li>
-                </ul>
-              </div>
+            <div class="row">
+              <a class="navbar-brand" href="#">Fresh Tomatoes</a>
+              <!-- <div class="col-md-4 col-lg-2">
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Browse
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" style="transition-duration: 150ms;">
+                    <li ><a href="#">Movies & TV Shows</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                  </ul>
+                </div>
+              </div -->>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-        <div id="pinGrid">
-            {video_tiles}
-        </div>
+      {video_tiles}
     </div>
   </body>
-  <footer>
-      <p>Contact Me | GitHub</p>
-  </footer>
 </html>
 '''
 
@@ -107,9 +106,9 @@ tile_content = '''
         <img class="wrapper" src="{poster}" alt="{title} poster" width="220" height="342">
         <h4 class="title">{title} ({years})</h4>
         <h5>{rating} | {genre}</h5>
-        <p>{story}</p>
+        <p id="storyline">{story}</p>
         <img class="image-responsive" src="{stars}" alt="{imdb_rating}/10 rating"
-            width="50%"><p>{imdb_rating}</p>
+            width="50%"> {imdb_rating}
     </div>
 </div>
 '''
@@ -140,7 +139,6 @@ def create_video_tiles_content(videos):
             years=video.years
         )
     return content
-
 
 def open_videos_page(videos):
     # Create or overwrite the output file
