@@ -8,7 +8,7 @@
 This application requires python 2.7.
 To start the webserver, just follow the steps below.
 
-### Clone the Repositorysfg
+### Clone the Repository
 Once Python 2.7 is installed correctly execute the following:
 
 ```
